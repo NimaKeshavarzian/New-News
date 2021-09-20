@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'open-sans';
+  src: url("../fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: 'overpass-regular';
+  src: url("../fonts/Overpass-Regular.ttf"); }
+
+@font-face {
+  font-family: 'overpass-bold';
+  src: url("../fonts/Overpass-Bold.ttf"); }
+
+#pageHeader {
+  min-height: 6%;
+  width: 100%;
+  height: auto;
+  background: none; }
+
+#pageTitle {
+  width: auto;
+  float: left;
+  margin-right: 2em; }
+
+#pageTitle a {
+  cursor: pointer;
+  font: normal bolder 30px "open-sans";
+  color: #174E81; }
+
+#pageMenu {
+  display: inline;
+  float: left;
+  margin-top: 0.8em; }
+
+#pageMenu ul {
+  display: flex;
+  display: -ms-flexbox;
+  flex-flow: row;
+  -ms-flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none; }
+
+.menuItem {
+  margin: 0 0.75em; }
+
+.menuItem a {
+  font: normal normal 20px "overpass-regular";
+  color: #3A3A3A; }
+
+.selectedItem {
+  color: #174E81 !important; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0 2.5%; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition-duration: 0.3s; }
+
+a:hover {
+  color: #174E81; }

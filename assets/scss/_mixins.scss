@@ -1,0 +1,34 @@
+@mixin general($width, $height, $background: none) {
+    width: $width;
+    height: $height;
+    background: $background;
+}
+
+@mixin position($type: relative, $top: 0, $left: 0, $bottom: 0, $right:0) {
+    position: $type;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;
+}
+
+@mixin flex($flow: column, $justify-content: center, $align-items: start) {
+    display: flex;
+    display: -ms-flexbox;
+    flex-flow: $flow;
+    -ms-flex-flow: $flow;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin grid($template-column, $template-row) {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: $template-column;
+    grid-template-rows: $template-row;
+}
+
+@mixin font($family, $size, $style: normal, $weight: normal, $color: map-get($textColors, "primary")) {
+    font: $style $weight $size $family;
+    color: $color;
+}

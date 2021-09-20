@@ -1,0 +1,32 @@
+// Files
+@import "./variables";
+@import "./fonts";
+@import "./mixins";
+@import "./header";
+@import "./slider";
+@import "./recent";
+@import "./more_data";
+@import "./tools";
+@import "./footer";
+@import "./dark_mode";
+@import "./responsive";
+// Basic styles
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 2.5%;
+}
+
+a {
+    text-decoration: none;
+    color: map-get($textColors, "primary");
+    transition-duration: 0.3s;
+}
+
+a:hover {
+    color: map-get($generalColors, "primary");
+}
