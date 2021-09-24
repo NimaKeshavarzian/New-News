@@ -18,6 +18,7 @@
         }
         // Title
         .sliderItemTitle {
+            min-height: 10%;
             font-size: 1.3rem;
         }
     }
@@ -63,10 +64,7 @@
     border: 2px solid map-get($textColors, "primary");
     // Title
     .sliderItemTitle {
-        // General
-        width: 100%;
-        min-height: 15%;
-        max-height: 100%;
+        @include postDataContainer;
         // Position
         @include position(absolute, unset, 0, 0);
         // Background styles
@@ -77,8 +75,6 @@
         // Padding
         padding-left: 0.1em;
         // Links
-        a:hover {
-            color: $detailsColor;
-        }
+        @include changeDetailsLinkColor;
     }
 }

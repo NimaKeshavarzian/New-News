@@ -32,3 +32,23 @@
     font: $style $weight $size $family;
     color: $color;
 }
+
+@mixin postDataContainer {
+    width: 100%;
+    min-height: 20%;
+    max-height: 100%;
+    background: $articleTitleBg;
+    @include position(absolute, unset);
+}
+
+@mixin titleUnderLine {
+    @include position(absolute, unset);
+    content: '';
+    border-radius: map-get($borderRadiusSize, "level3");
+}
+
+@mixin changeDetailsLinkColor {
+    a:hover {
+        color: $detailsColor;
+    }
+}

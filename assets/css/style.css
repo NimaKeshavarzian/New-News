@@ -75,6 +75,7 @@
     #leftSlider .sliderItem:nth-child(1) .sliderItemImg {
       height: 432px; }
     #leftSlider .sliderItem:nth-child(1) .sliderItemTitle {
+      min-height: 10%;
       font-size: 1.3rem; }
   #leftSlider .sliderItem:nth-child(2) {
     grid-column: 1/2;
@@ -114,8 +115,14 @@
   border: 2px solid #fff; }
   .sliderItem .sliderItemTitle {
     width: 100%;
-    min-height: 15%;
+    min-height: 20%;
     max-height: 100%;
+    background: #00000080;
+    position: absolute;
+    top: unset;
+    left: 0;
+    bottom: 0;
+    right: 0;
     position: absolute;
     top: unset;
     left: 0;
@@ -265,32 +272,82 @@
   height: auto;
   background: none;
   position: absolute;
-  top: unset;
-  left: unset;
-  bottom: 0;
-  right: 3em;
+  top: 5em;
+  right: 0;
   display: flex;
   display: -ms-flexbox;
   flex-flow: column;
   -ms-flex-flow: column;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: flex-end; }
 
-#moreDataItem {
-  width: 80%;
-  height: auto;
-  background: none;
+.moreDataItem {
+  width: 95%;
+  max-height: 50em;
   display: flex;
   display: -ms-flexbox;
   flex-flow: column;
   -ms-flex-flow: column;
   justify-content: flex-start;
-  align-items: center; }
-  #moreDataItem .moreDataTitle {
+  align-items: center;
+  margin-top: 2em;
+  overflow-y: scroll; }
+  .moreDataItem .moreDataTitle {
     width: 100%;
     position: relative;
+    font: normal bolder 1.3rem "open-sans";
+    color: #174E81;
     text-align: left;
-    padding-bottom: 0.2em; }
+    padding-bottom: 0.4em; }
+  .moreDataItem .moreDataTitle:before,
+  .moreDataItem .moreDataTitle:after {
+    position: absolute;
+    top: unset;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    border-radius: 30px; }
+  .moreDataItem .moreDataTitle:before {
+    width: 124px;
+    height: 5px;
+    background: #174E81;
+    z-index: 1; }
+  .moreDataItem #popularTitle:before {
+    width: 83px; }
+  .moreDataItem .moreDataTitle:after {
+    width: 100%;
+    height: 4px;
+    background: #ababab;
+    z-index: 0; }
+  .moreDataItem .moreDataPost {
+    width: 90%;
+    height: 15em;
+    background: none;
+    position: relative;
+    margin-top: 1em;
+    border-radius: 20px; }
+    .moreDataItem .moreDataPost img {
+      width: 100%;
+      height: 240px;
+      background: none;
+      border-radius: 20px; }
+    .moreDataItem .moreDataPost .moreDataPostTitle {
+      width: 100%;
+      min-height: 20%;
+      max-height: 100%;
+      background: #00000080;
+      position: absolute;
+      top: unset;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      font: normal bolder 1rem "open-sans";
+      color: #fff;
+      padding: 0.1em 0.5em;
+      border-radius: 0 0 20px 20px; }
+      .moreDataItem .moreDataPost .moreDataPostTitle a:hover {
+        color: #1D92FF; }
 
 * {
   box-sizing: border-box;

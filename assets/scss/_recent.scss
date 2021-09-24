@@ -16,9 +16,7 @@
 
 #recentArticlesTitle:before,
 #recentArticlesTitle:after {
-    @include position(absolute, unset);
-    content: '';
-    border-radius: map-get($borderRadiusSize, "level3");
+    @include titleUnderLine;
 }
 
 #recentArticlesTitle:before {
@@ -46,12 +44,7 @@
     }
     // Data
     .postData {
-        // General
-        width: 100%;
-        min-height: 20%;
-        max-height: 100%;
-        background: $articleTitleBg;
-        @include position(absolute, unset);
+        @include postDataContainer;
         @include flex(column, space-between, space-between); // Border
         border-radius: inherit;
         // Title
@@ -60,9 +53,7 @@
             @include font('open-sans', 1.2rem, normal, bolder);
             padding: 0 0.5em;
             // Links
-            a:hover {
-                color: $detailsColor;
-            }
+            @include changeDetailsLinkColor;
         }
         // Details
         .postDetails {
@@ -102,9 +93,7 @@
         a {
             color: map-get($textColors, "secondary");
         }
-        a:hover {
-            color: $detailsColor;
-        }
+        @include changeDetailsLinkColor;
     }
     li.selectedPage {
         background: map-get($generalColors, "primary");
