@@ -21,6 +21,7 @@ body {
     margin: 0 2.5%;
 }
 
+// Links
 a {
     text-decoration: none;
     color: map-get($textColors, "primary");
@@ -29,4 +30,12 @@ a {
 
 a:hover {
     color: map-get($generalColors, "primary");
+}
+
+// Articles
+#articlesContainer {
+    width: 95%;
+    @include flex(row, flex-start, flex-start);
+    position: relative;
+    margin: auto;
 }

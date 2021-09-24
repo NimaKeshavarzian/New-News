@@ -16,20 +16,29 @@
         .sliderItemImg {
             height: 432px;
         }
+        // Title
+        .sliderItemTitle {
+            font-size: 1.3rem;
+        }
     }
     // Little slider 1
-    #leftSlider .sliderItem:nth-child(2) {
+    .sliderItem:nth-child(2) {
         grid-column: 1/2;
         grid-row: 2/3;
+        font-size: 1rem;
     }
     // Little slider 2
-    #leftSlider .sliderItem:nth-child(3) {
+    .sliderItem:nth-child(3) {
         grid-column: 2/3;
         grid-row: 2/3;
     }
     // Images
     .sliderItemImg {
         @include general(100%, 141px);
+    }
+    // Title
+    .sliderItemTitle {
+        font-size: 1rem
     }
 }
 
