@@ -397,6 +397,8 @@
     margin-top: 0.5em;
     font: normal bold 1.3rem "overpass-bold";
     color: #3A3A3A; }
+    .widget .widgetItem a {
+      color: #3A3A3A; }
 
 * {
   box-sizing: border-box;
