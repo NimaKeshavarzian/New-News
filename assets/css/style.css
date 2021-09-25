@@ -283,7 +283,7 @@
 
 .moreDataItem {
   width: 95%;
-  max-height: 50em;
+  max-height: 51em;
   display: flex;
   display: -ms-flexbox;
   flex-flow: column;
@@ -348,6 +348,55 @@
       border-radius: 0 0 20px 20px; }
       .moreDataItem .moreDataPost .moreDataPostTitle a:hover {
         color: #1D92FF; }
+
+#widgets {
+  width: 100%;
+  display: flex;
+  display: -ms-flexbox;
+  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3em; }
+
+.widget {
+  width: 40.5%;
+  margin-right: 1em;
+  display: flex;
+  display: -ms-flexbox;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+  .widget > * {
+    width: 100%; }
+  .widget .widgetTitle {
+    position: relative;
+    font: normal bolder 1.3rem "open-sans";
+    color: #174E81;
+    padding-bottom: 0.3em; }
+    .widget .widgetTitle :before,
+    .widget .widgetTitle :after {
+      position: absolute;
+      top: unset;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: '';
+      border-radius: 30px;
+      height: 4px; }
+    .widget .widgetTitle :before {
+      width: 100px;
+      background: #174E81;
+      z-index: 1; }
+    .widget .widgetTitle :after {
+      width: 100%;
+      background: #ababab;
+      z-index: 0; }
+  .widget .widgetItem {
+    margin-top: 0.5em;
+    font: normal bold 1.3rem "overpass-bold";
+    color: #3A3A3A; }
 
 * {
   box-sizing: border-box;

@@ -9,7 +9,7 @@
 .moreDataItem {
     // General
     width: 95%;
-    max-height: 50em;
+    max-height: 51em;
     @include flex(column, flex-start, center);
     margin-top: 2em;
     overflow-y: scroll;
