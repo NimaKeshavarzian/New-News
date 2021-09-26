@@ -1,7 +1,7 @@
 // Body
 #recentNews {
     @include general(60%, auto);
-    @include flex(column, center, center);
+    @include centerElements(column);
     padding: 1em 0;
 }
 
@@ -62,7 +62,7 @@
             padding: 0.3em 1.75em;
             // Detail items
             .postDetail {
-                @include flex(row, center, center);
+                @include centerElements(row);
                 img {
                     margin-bottom: 0.3em;
                 }
@@ -78,7 +78,7 @@
 // Page counter
 #pageCounter {
     @include general(100%, auto);
-    @include flex(row, center, center);
+    @include centerElements(row);
     margin-top: 2em;
     list-style: none;
     // Items

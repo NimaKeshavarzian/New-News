@@ -1,7 +1,7 @@
 // Body
 #slider {
     @include general(100%, 93%);
-    @include flex(row, center, center);
+    @include centerElements(row);
 }
 
 // Left

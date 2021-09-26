@@ -52,3 +52,7 @@
         color: $detailsColor;
     }
 }
+
+@mixin centerElements($direction) {
+    @include flex($direction, center, center)
+}

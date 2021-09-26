@@ -17,8 +17,8 @@
     padding: 0;
 }
 
-body {
-    margin: 0 2.5%;
+body>*:not(footer) {
+    padding: 0 1.5%;
 }
 
 // Links
