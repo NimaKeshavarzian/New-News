@@ -1,0 +1,90 @@
+// Body
+#article {
+    width: 60%;
+    margin: 1em auto;
+}
+
+// Data
+#postData {
+    // General
+    @include general(100%, 75%);
+    position: relative;
+    border-radius: 0 0 map-get($borderRadiusSize, "level2") map-get($borderRadiusSize, "level2");
+    // Thumbnail
+    #thumbnail {
+        @include general(100%, 468px);
+        border-radius: inherit;
+    }
+    // Data
+    #data {
+        @include flex(column, flex-start, unset);
+        // Data Background
+        @include postDataContainer(10%);
+        background: $singlePageArticleTitleBg;
+        // Border
+        border-radius: inherit;
+        // Title
+        #postTitle {
+            @include font('open-sans', 1.4rem, normal, bolder);
+            padding-left: 0.6em;
+        }
+        // More data
+        #postMoreData {
+            @include postMoreData(0.7em 2.5em, space-around);
+        }
+        // Post categories
+        #postCategories {
+            @include flex(row wrap, flex-start, center);
+            padding: 1em 1.5em;
+        }
+        .postCategory {
+            margin: 0.3em 0.5em;
+            background: map-get($generalColors, "primary");
+            @include font('overpass-bold', 1.2em, normal, 800);
+            padding: 0.3em 0.5em;
+            border-radius: map-get($borderRadiusSize, "level4");
+        }
+    }
+}
+
+// Content
+#postContent {
+    margin-top: 2em;
+    @include font('overpass-regular', 1.1rem, normal, normal, map-get($generalColors, "secondary"));
+    text-align: left;
+    line-height: 35px;
+}
+
+#postContent::selection {
+    background: map-get($generalColors, "primary");
+    color: map-get($textColors, "primary");
+}
+
+// Tags
+#tagsContainer {
+    // General
+    @include centerElements(row);
+    justify-content: flex-start;
+    margin-top: 2em;
+    padding-left: 1.4em;
+    // part Title
+    .title {
+        float: left;
+        margin-right: 0.5em;
+        @include font('overpass-regular', 1.4rem, normal, normal, map-get($textColors, "secondary"));
+    }
+    // Tags list
+    #tags {
+        float: left;
+        @include flex(row wrap, flex-start, center);
+        .tag {
+            margin: 0.2em 0.1em;
+            background: map-get($generalColors, "primary");
+            border-radius: map-get($borderRadiusSize, "level4");
+            @include font('overpass-bold', 1.3rem, normal, bold);
+            padding: 0.3em 0.9em;
+            // Links
+            @include changeDetailsLinkColor;
+        }
+    }
+}

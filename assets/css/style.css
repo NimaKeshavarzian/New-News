@@ -32,8 +32,8 @@
   margin-top: 0.8em; }
 
 #pageMenu ul {
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: row;
   -ms-flex-flow: row;
   justify-content: flex-start;
@@ -54,8 +54,8 @@
   width: 100%;
   height: 93%;
   background: none;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: row;
   -ms-flex-flow: row;
   justify-content: center;
@@ -65,8 +65,8 @@
   width: 60%;
   height: 100%;
   background: none;
-  display: grid;
   display: -ms-grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 3fr 1fr; }
   #leftSlider .sliderItem:nth-child(1) {
@@ -95,8 +95,8 @@
   width: 40%;
   height: 100%;
   background: none;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: column;
   -ms-flex-flow: column;
   justify-content: flex-start;
@@ -118,6 +118,8 @@
     min-height: 20%;
     max-height: 100%;
     background: #00000080;
+    backdrop-filter: blur(10px);
+    webkit-backdrop-filter: blur(10px);
     position: absolute;
     top: unset;
     left: 0;
@@ -140,8 +142,8 @@
   width: 60%;
   height: auto;
   background: none;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: column;
   -ms-flex-flow: column;
   justify-content: center;
@@ -195,13 +197,15 @@
     min-height: 20%;
     max-height: 100%;
     background: #00000080;
+    backdrop-filter: blur(10px);
+    webkit-backdrop-filter: blur(10px);
     position: absolute;
     top: unset;
     left: 0;
     bottom: 0;
     right: 0;
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
     flex-flow: column;
     -ms-flex-flow: column;
     justify-content: space-between;
@@ -213,9 +217,9 @@
       padding: 0 0.5em; }
       .post .postData .postTitle a:hover {
         color: #1D92FF; }
-    .post .postData .postDetails {
-      display: flex;
+    .post .postData .postMoreData {
       display: -ms-flexbox;
+      display: flex;
       flex-flow: row;
       -ms-flex-flow: row;
       justify-content: space-between;
@@ -223,16 +227,16 @@
       font: normal bold 1rem "overpass-bold";
       color: #fff;
       padding: 0.3em 1.75em; }
-      .post .postData .postDetails .postDetail {
-        display: flex;
+      .post .postData .postMoreData .postMoreDataItem {
         display: -ms-flexbox;
+        display: flex;
         flex-flow: row;
         -ms-flex-flow: row;
         justify-content: center;
         align-items: center; }
-        .post .postData .postDetails .postDetail img {
+        .post .postData .postMoreData .postMoreDataItem img {
           margin-bottom: 0.3em; }
-        .post .postData .postDetails .postDetail span {
+        .post .postData .postMoreData .postMoreDataItem span {
           margin-left: 0.3em;
           color: #1D92FF; }
 
@@ -240,8 +244,8 @@
   width: 100%;
   height: auto;
   background: none;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: row;
   -ms-flex-flow: row;
   justify-content: center;
@@ -274,8 +278,8 @@
   position: absolute;
   top: 5em;
   right: 0;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: column;
   -ms-flex-flow: column;
   justify-content: flex-end;
@@ -284,8 +288,8 @@
 .moreDataItem {
   width: 95%;
   max-height: 51em;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: column;
   -ms-flex-flow: column;
   justify-content: flex-start;
@@ -337,6 +341,8 @@
       min-height: 20%;
       max-height: 100%;
       background: #00000080;
+      backdrop-filter: blur(10px);
+      webkit-backdrop-filter: blur(10px);
       position: absolute;
       top: unset;
       left: 0;
@@ -351,8 +357,8 @@
 
 #widgets {
   width: 100%;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   justify-content: center;
@@ -362,8 +368,8 @@
 .widget {
   width: 40.5%;
   margin-right: 1em;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: column;
   -ms-flex-flow: column;
   justify-content: center;
@@ -404,8 +410,8 @@
   width: 100%;
   height: auto;
   background: #3A3A3A;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: column;
   -ms-flex-flow: column;
   justify-content: flex-start;
@@ -421,8 +427,8 @@
     font: italic bolder 1rem "open-sans";
     color: #fff; }
   #pageFooter #adminMail {
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
     flex-flow: row;
     -ms-flex-flow: row;
     justify-content: center;
@@ -434,8 +440,8 @@
       margin-right: 0.4em; }
   #pageFooter #socialMediaIcons {
     width: 100%;
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
     flex-flow: row;
     -ms-flex-flow: row;
     justify-content: center;
@@ -444,8 +450,8 @@
     #pageFooter #socialMediaIcons > * {
       margin: 0 1em; }
   #pageFooter #copyright {
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
     flex-flow: row;
     -ms-flex-flow: row;
     justify-content: center;
@@ -455,6 +461,127 @@
     color: #fff; }
     #pageFooter #copyright img {
       margin-right: 0.3em; }
+
+#article {
+  width: 60%;
+  margin: 1em auto; }
+
+#postData {
+  width: 100%;
+  height: 75%;
+  background: none;
+  position: relative;
+  border-radius: 0 0 20px 20px; }
+  #postData #thumbnail {
+    width: 100%;
+    height: 468px;
+    background: none;
+    border-radius: inherit; }
+  #postData #data {
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column;
+    -ms-flex-flow: column;
+    justify-content: flex-start;
+    align-items: unset;
+    width: 100%;
+    min-height: 10%;
+    max-height: 100%;
+    background: #00000080;
+    backdrop-filter: blur(10px);
+    webkit-backdrop-filter: blur(10px);
+    position: absolute;
+    top: unset;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #0000004d;
+    border-radius: inherit; }
+    #postData #data #postTitle {
+      font: normal bolder 1.4rem "open-sans";
+      color: #fff;
+      padding-left: 0.6em; }
+    #postData #data #postMoreData {
+      display: -ms-flexbox;
+      display: flex;
+      flex-flow: row;
+      -ms-flex-flow: row;
+      justify-content: space-around;
+      align-items: center;
+      font: normal bold 1rem "overpass-bold";
+      color: #fff;
+      padding: 0.7em 2.5em; }
+      #postData #data #postMoreData .postMoreDataItem {
+        display: -ms-flexbox;
+        display: flex;
+        flex-flow: row;
+        -ms-flex-flow: row;
+        justify-content: center;
+        align-items: center; }
+        #postData #data #postMoreData .postMoreDataItem img {
+          margin-bottom: 0.3em; }
+        #postData #data #postMoreData .postMoreDataItem span {
+          margin-left: 0.3em;
+          color: #1D92FF; }
+    #postData #data #postCategories {
+      display: -ms-flexbox;
+      display: flex;
+      flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 1em 1.5em; }
+    #postData #data .postCategory {
+      margin: 0.3em 0.5em;
+      background: #174E81;
+      font: normal 800 1.2em "overpass-bold";
+      color: #fff;
+      padding: 0.3em 0.5em;
+      border-radius: 50px; }
+
+#postContent {
+  margin-top: 2em;
+  font: normal normal 1.1rem "overpass-regular";
+  color: #3A3A3A;
+  text-align: left;
+  line-height: 35px; }
+
+#postContent::selection {
+  background: #174E81;
+  color: #fff; }
+
+#tagsContainer {
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row;
+  -ms-flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2em;
+  padding-left: 1.4em; }
+  #tagsContainer .title {
+    float: left;
+    margin-right: 0.5em;
+    font: normal normal 1.4rem "overpass-regular";
+    color: #000; }
+  #tagsContainer #tags {
+    float: left;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center; }
+    #tagsContainer #tags .tag {
+      margin: 0.2em 0.1em;
+      background: #174E81;
+      border-radius: 50px;
+      font: normal bold 1.3rem "overpass-bold";
+      color: #fff;
+      padding: 0.3em 0.9em; }
+      #tagsContainer #tags .tag a:hover {
+        color: #1D92FF; }
 
 * {
   box-sizing: border-box;
@@ -474,8 +601,8 @@ a:hover {
 
 #articlesContainer {
   width: 95%;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: row;
   -ms-flex-flow: row;
   justify-content: flex-start;

@@ -56,21 +56,8 @@
             @include changeDetailsLinkColor;
         }
         // Details
-        .postDetails {
-            @include flex(row, space-between, center);
-            @include font('overpass-bold', 1rem, normal, bold);
-            padding: 0.3em 1.75em;
-            // Detail items
-            .postDetail {
-                @include centerElements(row);
-                img {
-                    margin-bottom: 0.3em;
-                }
-                span {
-                    margin-left: 0.3em;
-                    color: $detailsColor;
-                }
-            }
+        .postMoreData {
+            @include postMoreData;
         }
     }
 }

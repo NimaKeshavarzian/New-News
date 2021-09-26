@@ -13,8 +13,8 @@
 }
 
 @mixin flex($flow: column, $justify-content: center, $align-items: start) {
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
     flex-flow: $flow;
     -ms-flex-flow: $flow;
     justify-content: $justify-content;
@@ -22,8 +22,8 @@
 }
 
 @mixin grid($template-column, $template-row) {
-    display: grid;
     display: -ms-grid;
+    display: grid;
     grid-template-columns: $template-column;
     grid-template-rows: $template-row;
 }
@@ -33,12 +33,31 @@
     color: $color;
 }
 
-@mixin postDataContainer {
+@mixin postDataContainer($min-height: 20%) {
     width: 100%;
-    min-height: 20%;
+    min-height: $min-height;
     max-height: 100%;
     background: $articleTitleBg;
+    backdrop-filter: blur(10px);
+    webkit-backdrop-filter: blur(10px);
     @include position(absolute, unset);
+}
+
+@mixin postMoreData($padding: 0.3em 1.75em, $justify-content: space-between) {
+    @include flex(row, $justify-content, center);
+    @include font('overpass-bold', 1rem, normal, bold);
+    padding: $padding;
+    // Detail items
+    .postMoreDataItem {
+        @include centerElements(row);
+        img {
+            margin-bottom: 0.3em;
+        }
+        span {
+            margin-left: 0.3em;
+            color: $detailsColor;
+        }
+    }
 }
 
 @mixin titleUnderLine {
