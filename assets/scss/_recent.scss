@@ -1,12 +1,12 @@
 // Body
-#recentNews {
+#articles {
     @include general(60%, auto);
     @include centerElements(column);
     padding: 1em 0;
 }
 
 // Title
-#recentArticlesTitle {
+#articlesTitle {
     width: 100%;
     position: relative;
     @include font('open-sans', 1.9rem, normal, bolder, map-get($generalColors, "primary"));
@@ -14,17 +14,17 @@
     padding-bottom: .3em;
 }
 
-#recentArticlesTitle:before,
-#recentArticlesTitle:after {
+#articlesTitle:before,
+#articlesTitle:after {
     @include titleUnderLine;
 }
 
-#recentArticlesTitle:before {
+#articlesTitle:before {
     @include general(115px, 5px, map-get($generalColors, "primary"));
     z-index: 1;
 }
 
-#recentArticlesTitle:after {
+#articlesTitle:after {
     @include general(100%, 4px, $lineColor);
     z-index: 0;
 }
