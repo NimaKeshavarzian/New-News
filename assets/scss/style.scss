@@ -10,6 +10,7 @@
 @import "./footer";
 @import "./single";
 @import "./archives";
+@import "./search";
 @import "./loader";
 @import "./dark_mode";
 @import "./responsive";
@@ -26,7 +27,7 @@ body>*:not(footer) {
 
 // Hide elements
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 // Links

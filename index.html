@@ -16,6 +16,17 @@
         <div id="loaderElement"></div>
     </div>
 
+    <!-- Search Box -->
+    <form method="GET">
+        <div id="searchBox" class="hidden">
+            <input type="text" name="s" id="searchValue" placeholder="Search...">
+            <button type="submit" id="submitSearch" name="submit">
+                <img src="./assets/icons/search-solid.svg" alt="Search" width="30" height="35">
+            </button>
+            <button type="button" id="closeSearchBox">&#10005;</button>
+        </div>
+    </form>
+
     <!-- Header -->
     <header>
         <div id="pageHeader">
@@ -29,6 +40,11 @@
                     <li class="menuItem"><a href="http://">Lorem Ipsum 2</a></li>
                 </ul>
             </nav>
+            <div id="pageTools">
+                <h1 id="searchBoxTransmitter">
+                    <img src="./assets/icons/search-solid.svg" alt="Search" width="30" height="30">
+                </h1>
+            </div>
         </div>
     </header>
 

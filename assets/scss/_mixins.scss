@@ -15,8 +15,8 @@
 @mixin flex($flow: column, $justify-content: center, $align-items: start) {
     display: -ms-flexbox;
     display: flex;
-    flex-flow: $flow;
     -ms-flex-flow: $flow;
+    flex-flow: $flow;
     justify-content: $justify-content;
     align-items: $align-items;
 }

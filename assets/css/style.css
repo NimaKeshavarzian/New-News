@@ -14,7 +14,14 @@
   min-height: 6%;
   width: 100%;
   height: auto;
-  background: none; }
+  background: none;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center; }
 
 #pageTitle {
   width: auto;
@@ -30,25 +37,37 @@
   display: inline;
   float: left;
   margin-top: 0.8em; }
-
-#pageMenu ul {
-  display: -ms-flexbox;
-  display: flex;
-  flex-flow: row;
-  -ms-flex-flow: row;
-  justify-content: flex-start;
-  align-items: center;
-  list-style: none; }
+  #pageMenu ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none; }
 
 .menuItem {
   margin: 0 0.75em; }
-
-.menuItem a {
-  font: normal normal 20px "overpass-regular";
-  color: #3A3A3A; }
+  .menuItem a {
+    font: normal normal 20px "overpass-regular";
+    color: #3A3A3A; }
 
 .selectedItem {
   color: #174E81 !important; }
+
+#pageTools {
+  min-width: 10%;
+  position: absolute;
+  top: 0.4em;
+  right: 1em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center; }
+  #pageTools > * {
+    cursor: pointer; }
 
 #slider {
   width: 100%;
@@ -56,8 +75,8 @@
   background: none;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
   -ms-flex-flow: row;
+  flex-flow: row;
   justify-content: center;
   align-items: center; }
 
@@ -97,8 +116,8 @@
   background: none;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
   -ms-flex-flow: column;
+  flex-flow: column;
   justify-content: flex-start;
   align-items: center; }
   #rightSlider .sliderItem {
@@ -144,8 +163,8 @@
   background: none;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
   -ms-flex-flow: column;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   padding: 1em 0; }
@@ -206,8 +225,8 @@
     right: 0;
     display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
     -ms-flex-flow: column;
+    flex-flow: column;
     justify-content: space-between;
     align-items: space-between;
     border-radius: inherit; }
@@ -220,8 +239,8 @@
     .post .postData .postMoreData {
       display: -ms-flexbox;
       display: flex;
-      flex-flow: row;
       -ms-flex-flow: row;
+      flex-flow: row;
       justify-content: space-between;
       align-items: center;
       font: normal bold 1rem "overpass-bold";
@@ -230,8 +249,8 @@
       .post .postData .postMoreData .postMoreDataItem {
         display: -ms-flexbox;
         display: flex;
-        flex-flow: row;
         -ms-flex-flow: row;
+        flex-flow: row;
         justify-content: center;
         align-items: center; }
         .post .postData .postMoreData .postMoreDataItem img {
@@ -246,8 +265,8 @@
   background: none;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
   -ms-flex-flow: row;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
   margin-top: 2em;
@@ -280,8 +299,8 @@
   right: 0;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
   -ms-flex-flow: column;
+  flex-flow: column;
   justify-content: flex-end;
   align-items: flex-end; }
 
@@ -290,8 +309,8 @@
   max-height: 51em;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
   -ms-flex-flow: column;
+  flex-flow: column;
   justify-content: flex-start;
   align-items: center;
   margin-top: 2em;
@@ -359,8 +378,8 @@
   width: 100%;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
   -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
   margin-top: 3em; }
@@ -370,8 +389,8 @@
   margin-right: 1em;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
   -ms-flex-flow: column;
+  flex-flow: column;
   justify-content: center;
   align-items: center; }
   .widget > * {
@@ -412,8 +431,8 @@
   background: #3A3A3A;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
   -ms-flex-flow: column;
+  flex-flow: column;
   justify-content: flex-start;
   align-items: center;
   margin-top: 4em;
@@ -429,8 +448,8 @@
   #pageFooter #adminMail {
     display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
     -ms-flex-flow: row;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
@@ -442,8 +461,8 @@
     width: 100%;
     display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
     -ms-flex-flow: row;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     margin-top: 1em; }
@@ -452,8 +471,8 @@
   #pageFooter #copyright {
     display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
     -ms-flex-flow: row;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     margin-top: 1.5em;
@@ -480,8 +499,8 @@
   #postData #data {
     display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
     -ms-flex-flow: column;
+    flex-flow: column;
     justify-content: flex-start;
     align-items: unset;
     width: 100%;
@@ -504,8 +523,8 @@
     #postData #data #postMoreData {
       display: -ms-flexbox;
       display: flex;
-      flex-flow: row;
       -ms-flex-flow: row;
+      flex-flow: row;
       justify-content: space-around;
       align-items: center;
       font: normal bold 1rem "overpass-bold";
@@ -514,8 +533,8 @@
       #postData #data #postMoreData .postMoreDataItem {
         display: -ms-flexbox;
         display: flex;
-        flex-flow: row;
         -ms-flex-flow: row;
+        flex-flow: row;
         justify-content: center;
         align-items: center; }
         #postData #data #postMoreData .postMoreDataItem img {
@@ -526,8 +545,8 @@
     #postData #data #postCategories {
       display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap;
       -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
       justify-content: flex-start;
       align-items: center;
       padding: 1em 1.5em; }
@@ -553,8 +572,8 @@
 #tagsContainer {
   display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
   -ms-flex-flow: row;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
@@ -569,8 +588,8 @@
     float: left;
     display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
     -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center; }
     #tagsContainer #tags .tag {
@@ -591,6 +610,42 @@
     #archives #articlesContainer #articlesTitle span {
       font-size: 1.6rem;
       color: #174E81; }
+
+#searchBox {
+  width: 30%;
+  height: auto;
+  background: #fff;
+  position: fixed;
+  top: 6em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  border: 2px solid #3A3A3A;
+  border-radius: 20px; }
+  #searchBox > * {
+    float: left; }
+  #searchBox #searchValue {
+    width: 70%;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    font: normal bold 1.3rem "overpass-bold";
+    color: #174E81;
+    padding: 0.2em 0.4em; }
+  #searchBox #submitSearch {
+    width: 15%;
+    height: 100%;
+    background: #fff;
+    border: none;
+    cursor: pointer; }
+  #searchBox #closeSearchBox {
+    width: 15%;
+    height: 35px;
+    background: #fff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    font: normal 700 1.3rem "overpass-regular";
+    color: #3A3A3A;
+    cursor: pointer; }
 
 #loader {
   width: 100%;
@@ -629,7 +684,7 @@ body > *:not(footer) {
   padding: 0 1.5%; }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 
 a {
   text-decoration: none;
@@ -643,8 +698,8 @@ a:hover {
   width: 95%;
   display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
   -ms-flex-flow: row;
+  flex-flow: row;
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
