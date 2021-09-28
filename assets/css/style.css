@@ -592,6 +592,34 @@
       font-size: 1.6rem;
       color: #174E81; }
 
+#loader {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10; }
+  #loader #loaderElement {
+    width: 60px;
+    height: 20px;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle closest-side at left 6px top 50%, currentColor 90%, #0000), radial-gradient(circle closest-side, currentColor 90%, #0000), radial-gradient(circle closest-side at right 6px top 50%, currentColor 90%, #0000);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: loader 1.2s infinite alternate; }
+
+@keyframes loader {
+  to {
+    width: 30px;
+    height: 32px; } }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -599,6 +627,9 @@
 
 body > *:not(footer) {
   padding: 0 1.5%; }
+
+.hidden {
+  display: none; }
 
 a {
   text-decoration: none;

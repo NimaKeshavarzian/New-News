@@ -10,6 +10,7 @@
 @import "./footer";
 @import "./single";
 @import "./archives";
+@import "./loader";
 @import "./dark_mode";
 @import "./responsive";
 // Basic styles
@@ -21,6 +22,11 @@
 
 body>*:not(footer) {
     padding: 0 1.5%;
+}
+
+// Hide elements
+.hidden {
+    display: none;
 }
 
 // Links
