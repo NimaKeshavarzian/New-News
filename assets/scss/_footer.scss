@@ -16,6 +16,7 @@
     // Page description
     #desc {
         @include font('open-sans', 1rem, italic, bolder);
+        text-align: center
     }
     // Email
     #adminMail {
@@ -40,7 +41,7 @@
     // Copyright
     #copyright {
         @include centerElements(row);
-        margin-top: 1.5em;
+        margin: 1.5em 0 0.4em;
         @include font('open-sans', 1rem, normal, bolder);
         img {
             margin-right: 0.3em;

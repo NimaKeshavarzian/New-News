@@ -40,8 +40,8 @@
   #pageMenu ul {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: row;
-    flex-flow: row;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
     list-style: none; }
@@ -67,6 +67,7 @@
   justify-content: center;
   align-items: center; }
   #pageTools > * {
+    margin-right: 0.3em;
     cursor: pointer; }
 
 #slider {
@@ -208,7 +209,7 @@
   border-radius: 10px; }
   .post .postThumbnail {
     width: 100%;
-    height: 336px;
+    height: 100%;
     background: none;
     border-radius: inherit; }
   .post .postData {
@@ -352,7 +353,7 @@
     border-radius: 20px; }
     .moreDataItem .moreDataPost img {
       width: 100%;
-      height: 240px;
+      height: 100%;
       background: none;
       border-radius: 20px; }
     .moreDataItem .moreDataPost .moreDataPostTitle {
@@ -444,7 +445,8 @@
     color: #fff; }
   #pageFooter #desc {
     font: italic bolder 1rem "open-sans";
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
   #pageFooter #adminMail {
     display: -ms-flexbox;
     display: flex;
@@ -475,7 +477,7 @@
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5em;
+    margin: 1.5em 0 0.4em;
     font: normal bolder 1rem "open-sans";
     color: #fff; }
     #pageFooter #copyright img {
@@ -493,7 +495,7 @@
   border-radius: 0 0 20px 20px; }
   #postData #thumbnail {
     width: 100%;
-    height: 468px;
+    height: 100%;
     background: none;
     border-radius: inherit; }
   #postData #data {
@@ -674,6 +676,131 @@
   to {
     width: 30px;
     height: 32px; } }
+
+@media screen and (max-width: 1050px) {
+  .post .postData .postTitle {
+    font-size: 1.1rem; }
+  .post .postData .postMoreData {
+    font-size: 0.94rem;
+    padding: 0.3em 0.5em; }
+  .moreDataItem .moreDataPost .moreDataPostTitle {
+    font-size: 0.95rem; } }
+
+@media screen and (max-width: 890px) {
+  #searchBox {
+    width: 50%; }
+  #articlesContainer {
+    flex-flow: column !important;
+    align-items: center !important; }
+    #articlesContainer #articles {
+      width: 80%; }
+    #articlesContainer #moreData {
+      width: 85%;
+      position: unset;
+      -ms-flex-flow: row;
+      flex-flow: row; }
+      #articlesContainer #moreData .moreDataItem {
+        height: 51em; }
+  #article {
+    width: 85%; }
+  #postData #data #postCategories {
+    padding-bottom: 0.5em; }
+    #postData #data #postCategories .postCategory {
+      font-size: 1em; } }
+
+@media screen and (max-width: 750px) {
+  #slider {
+    height: 85%; }
+    #slider img {
+      height: 100% !important; }
+  #articlesContainer #moreData {
+    width: 100%; }
+  #article {
+    width: 100%; } }
+
+@media screen and (max-width: 650px) {
+  #pageMenu ul {
+    justify-content: space-around; }
+    #pageMenu ul .menuItem {
+      margin: 0.5em; }
+  #slider {
+    height: 75%; }
+  #articlesContainer #articles {
+    width: 100%; }
+  .moreDataItem .moreDataPost {
+    height: 14em; } }
+
+@media screen and (max-width: 550px) {
+  #slider {
+    height: auto;
+    -ms-flex-flow: column;
+    flex-flow: column; }
+    #slider #leftSlider {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: center; }
+      #slider #leftSlider .sliderItem {
+        width: 100%; }
+      #slider #leftSlider .sliderItemTitle {
+        font-size: 1.1rem !important; }
+    #slider #rightSlider {
+      display: none; }
+  .post {
+    width: 100%;
+    height: 20em;
+    background: none; }
+  #articlesContainer #moreData {
+    -ms-flex-flow: column;
+    flex-flow: column; }
+    #articlesContainer #moreData .moreDataItem {
+      height: 40em; }
+      #articlesContainer #moreData .moreDataItem .moreDataPost {
+        width: 85%;
+        height: 15em;
+        background: none; } }
+
+@media screen and (max-width: 450px) {
+  #searchBox {
+    width: 75%; }
+  .post {
+    height: 17em; }
+  #widgets {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center; }
+    #widgets .widget {
+      width: 80%;
+      margin-top: .7em; }
+      #widgets .widget .widgetTitle {
+        font-size: 1.2rem; }
+      #widgets .widget .widgetItem {
+        font-size: 1.1rem;
+        text-align: center; }
+  #pageFooter #title {
+    font-size: 1.6em; }
+  #pageFooter #desc,
+  #pageFooter #adminMail {
+    font-size: 0.9rem; }
+  #postData {
+    height: 65%; }
+  #postData #data #postTitle {
+    font-size: 1.2rem; }
+  #postData #data #postMoreData {
+    font-size: .95rem;
+    padding: 0.6em; }
+  #postData #data #postCategories {
+    padding: 0; }
+    #postData #data #postCategories .postCategory {
+      font-size: .95em; }
+  .tag {
+    font-size: 1.1rem !important; } }
 
 * {
   box-sizing: border-box;

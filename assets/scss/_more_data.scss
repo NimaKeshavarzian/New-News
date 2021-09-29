@@ -46,7 +46,7 @@
         border-radius: map-get($borderRadiusSize, "level2");
         // Thumbnail
         img {
-            @include general(100%, 240px);
+            @include general(100%, 100%);
             border-radius: map-get($borderRadiusSize, "level2");
         }
         // Post title

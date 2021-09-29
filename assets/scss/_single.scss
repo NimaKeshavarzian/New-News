@@ -12,7 +12,7 @@
     border-radius: 0 0 map-get($borderRadiusSize, "level2") map-get($borderRadiusSize, "level2");
     // Thumbnail
     #thumbnail {
-        @include general(100%, 468px);
+        @include general(100%, 100%);
         border-radius: inherit;
     }
     // Data

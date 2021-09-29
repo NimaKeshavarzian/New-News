@@ -1,0 +1,208 @@
+@media screen and (max-width: 1050px) {
+    // Posts
+    .post .postData {
+        // Title
+        .postTitle {
+            font-size: 1.1rem;
+        }
+        // More data
+        .postMoreData {
+            font-size: 0.94rem;
+            padding: 0.3em 0.5em;
+        }
+    }
+    // More data posts
+    .moreDataItem .moreDataPost {
+        .moreDataPostTitle {
+            font-size: 0.95rem;
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+    // Search box
+    #searchBox {
+        width: 50%;
+    }
+    // Articles Container
+    #articlesContainer {
+        // Flex
+        flex-flow: column !important;
+        align-items: center !important;
+        // posts
+        #articles {
+            width: 80%;
+        }
+        // More data
+        #moreData {
+            width: 85%;
+            position: unset;
+            -ms-flex-flow: row;
+            flex-flow: row;
+            // Items
+            .moreDataItem {
+                height: 51em;
+            }
+        }
+    }
+    // Single
+    #article {
+        width: 85%;
+    }
+    #postData #data {
+        #postCategories {
+            padding-bottom: 0.5em;
+            .postCategory {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    // slider 
+    #slider {
+        height: 85%;
+        img {
+            height: 100% !important;
+        }
+    }
+    // More data
+    #articlesContainer #moreData {
+        width: 100%;
+    }
+    // Single
+    #article {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    // Menu
+    #pageMenu {
+        ul {
+            justify-content: space-around;
+            .menuItem {
+                margin: 0.5em;
+            }
+        }
+    }
+    // slider 
+    #slider {
+        height: 75%;
+    }
+    // articles
+    #articlesContainer #articles {
+        width: 100%;
+    }
+    // More data
+    .moreDataItem {
+        .moreDataPost {
+            height: 14em;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    // Slider
+    #slider {
+        height: auto;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        #leftSlider {
+            width: 100%;
+            @include flex(column, flex-start, center);
+            .sliderItem {
+                width: 100%;
+            }
+            // Title
+            .sliderItemTitle {
+                font-size: 1.1rem !important;
+            }
+        }
+        #rightSlider {
+            display: none
+        }
+    }
+    // Posts
+    .post {
+        @include general(100%, 20em);
+    }
+    // More data
+    #articlesContainer #moreData {
+        -ms-flex-flow: column;
+        flex-flow: column;
+        .moreDataItem {
+            height: 40em;
+            .moreDataPost {
+                @include general(85%, 15em);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    // Search box
+    #searchBox {
+        width: 75%;
+    }
+    // Posts
+    .post {
+        height: 17em;
+    }
+    // Widgets
+    #widgets {
+        @include flex(column, flex-start, center);
+        .widget {
+            width: 80%;
+            margin-top: .7em;
+            // Title
+            .widgetTitle {
+                font-size: 1.2rem;
+            }
+            // Item
+            .widgetItem {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+        }
+    }
+    // Footer
+    #pageFooter {
+        // Title
+        #title {
+            font-size: 1.6em;
+        }
+        // Description and mail
+        #desc,
+        #adminMail {
+            font-size: 0.9rem;
+        }
+    }
+    // Single
+    #postData {
+        height: 65%;
+    }
+    #postData #data {
+        // Title
+        #postTitle {
+            font-size: 1.2rem;
+        }
+        // Post more data
+        #postMoreData {
+            font-size: .95rem;
+            padding: 0.6em;
+        }
+        // Categories
+        #postCategories {
+            padding: 0;
+            .postCategory {
+                font-size: .95em;
+            }
+        }
+    }
+    // Tags
+    .tag {
+        font-size: 1.1rem !important;
+    }
+}

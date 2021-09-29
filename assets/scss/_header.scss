@@ -24,7 +24,7 @@
     float: left;
     margin-top: 0.8em;
     ul {
-        @include flex(row, flex-start, center);
+        @include flex(row wrap, flex-start, center);
         list-style: none;
     }
 }
@@ -50,6 +50,7 @@
     @include flex(row, center, center);
     // Child
     >* {
+        margin-right: 0.3em;
         cursor: pointer;
     }
 }

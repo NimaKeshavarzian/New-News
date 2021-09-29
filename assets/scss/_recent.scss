@@ -39,7 +39,7 @@
     border-radius: map-get($borderRadiusSize, "level1");
     // Thumbnail
     .postThumbnail {
-        @include general(100%, 336px);
+        @include general(100%, 100%);
         border-radius: inherit;
     }
     // Data
