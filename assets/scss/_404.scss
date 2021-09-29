@@ -1,0 +1,18 @@
+#notFound {
+    #mainContent {
+        @include general(100%, 90%);
+        @include flex(column, center, center);
+        // Error code
+        #errorCode {
+            @include font('overpass-bold', 8em, normal, 1000, map-get($generalColors, "primary"));
+        }
+        // Error description
+        #errorDesc {
+            @include font('overpass-regular', 1.5em, normal, 450, map-get($generalColors, "secondary"));
+            text-align: center;
+            span a {
+                color: map-get($generalColors, "primary");
+            }
+        }
+    }
+}
