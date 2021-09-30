@@ -1,3 +1,13 @@
+/* 
+Configure Theme
+Theme Name: New News
+Theme URI: https://github.com/NimaKeshavarzian/New-News/
+Description: a wordpress news theme with beautiful parts
+Author: Nima Keshavarzian
+Author URI: https://github.com/NimaKeshavarzian/
+Tags: Wordpress,html,theme,minimal,news
+Version: 1.0.0
+*/
 @font-face {
   font-family: 'open-sans';
   src: url("../fonts/OpenSans-Bold.ttf"); }

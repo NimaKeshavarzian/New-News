@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#174E81">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>New News</title>
 </head>
 
-<body>
+<body id="archives">
 
     <!-- Loader -->
     <div id="loader">
@@ -51,43 +51,10 @@
         </div>
     </header>
 
-    <!-- Slider -->
-    <div id="slider">
-        <div id="leftSlider">
-            <!-- Big slider item -->
-            <article class="sliderItem">
-                <img src="./assets/icons/Windows 11 Wallpaper 1.jpg" alt="Title" class="sliderItemImg">
-                <h1 class="sliderItemTitle"><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
-            </article>
-            <!-- First small slider -->
-            <article class="sliderItem">
-                <img src="./assets/icons/Windows 11 Wallpaper 23.jpg" alt="Title" class="sliderItemImg">
-                <h1 class="sliderItemTitle"><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
-            </article>
-            <!-- Second small slider -->
-            <article class="sliderItem">
-                <img src="./assets/icons/Windows 11 Wallpaper 6.jpg" alt="Title" class="sliderItemImg">
-                <h1 class="sliderItemTitle"><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
-            </article>
-        </div>
-        <div id="rightSlider">
-            <!-- First medium slider -->
-            <article class="sliderItem">
-                <img src="./assets/icons/Windows 11 Wallpaper 26.jpg" alt="Title" class="sliderItemImg">
-                <h1 class="sliderItemTitle"><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
-            </article>
-            <!-- Second medium slider -->
-            <article class="sliderItem">
-                <img src="./assets/icons/Windows 11 Wallpaper 20.jpg" alt="Title" class="sliderItemImg">
-                <h1 class="sliderItemTitle"><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
-            </article>
-        </div>
-    </div>
-
     <!-- Articles -->
     <div id="articlesContainer">
         <div id="articles">
-            <h1 id="articlesTitle">RECENT</h1>
+            <h1 id="articlesTitle">5 articles found for <span>"Search Value"</span></h1>
             <article class="post">
                 <img src="./assets/icons/Windows 11 Wallpaper 3.jpg" alt="title" class="postThumbnail">
                 <div class="postData">
@@ -247,7 +214,6 @@
 
     <!-- Scripts -->
     <script src="./assets/js/main.js"></script>
-
 </body>
 
 </html>

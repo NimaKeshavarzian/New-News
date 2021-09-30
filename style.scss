@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* 
+Configure Theme
+Theme Name: New News
+Theme URI: https://github.com/NimaKeshavarzian/New-News/
+Description: a wordpress news theme with beautiful parts
+Author: Nima Keshavarzian
+Author URI: https://github.com/NimaKeshavarzian/
+Tags: Wordpress,html,theme,minimal,news
+Version: 1.0.0
+*/
+
+// Files
+@import "./assets/scss/variables";
+@import "./assets/scss/fonts";
+@import "./assets/scss/mixins";
+@import "./assets/scss/header";
+@import "./assets/scss/slider";
+@import "./assets/scss/recent";
+@import "./assets/scss/more_data";
+@import "./assets/scss/widgets";
+@import "./assets/scss/footer";
+@import "./assets/scss/single";
+@import "./assets/scss/archives";
+@import "./assets/scss/search";
+@import "./assets/scss/404";
+@import "./assets/scss/loader";
+@import "./assets/scss/responsive";
+@import "./assets/scss/scrollbar";
+// Basic styles
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: map-get($textColors, "primary");
+}
+
+body>*:not(footer) {
+    padding: 0 1.5%;
+}
+
+// Hide elements
+.hidden {
+    display: none !important;
+}
+
+// Links
+a {
+    text-decoration: none;
+    color: map-get($textColors, "primary");
+    transition-duration: 0.3s;
+}
+
+a:hover {
+    color: map-get($generalColors, "primary");
+}
+
+// Articles
+#articlesContainer {
+    width: 95%;
+    @include flex(row, flex-start, flex-start);
+    position: relative;
+    margin: auto;
+}
