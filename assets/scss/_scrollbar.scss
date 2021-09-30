@@ -1,0 +1,16 @@
+@media screen and (min-width: 400px) {
+     ::-webkit-scrollbar,
+     ::-webkit-scrollbar-thumb {
+        border-radius: map-get($borderRadiusSize, "level4");
+    }
+     ::-webkit-scrollbar {
+        @include general(1em, auto, $borderColor);
+    }
+     ::-webkit-scrollbar-thumb {
+        @include general(100%, auto, map-get($generalColors, "primary"));
+    }
+    // More data item
+    .moreDataItem::-webkit-scrollbar-thumb {
+        background: $lineColor;
+    }
+}

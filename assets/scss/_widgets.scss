@@ -37,7 +37,7 @@
             // Items
             .widgetItem {
                 margin-top: 0.5em;
-                @include font('overpass-bold', 1.3rem, normal, bold, map-get($generalColors, "secondary"));
+                @include font('overpass-bold', 1.3rem, normal, normal, map-get($generalColors, "secondary"));
                 // Links
                 a {
                     color: map-get($generalColors, "secondary");

@@ -421,7 +421,7 @@
       z-index: 0; }
   .widget .widgetItem {
     margin-top: 0.5em;
-    font: normal bold 1.3rem "overpass-bold";
+    font: normal normal 1.3rem "overpass-bold";
     color: #3A3A3A; }
     .widget .widgetItem a {
       color: #3A3A3A; }
@@ -822,10 +822,28 @@
   .tag {
     font-size: 1.1rem !important; } }
 
+@media screen and (min-width: 400px) {
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-thumb {
+    border-radius: 50px; }
+  ::-webkit-scrollbar {
+    width: 1em;
+    height: auto;
+    background: #d1d1d1; }
+  ::-webkit-scrollbar-thumb {
+    width: 100%;
+    height: auto;
+    background: #174E81; }
+  .moreDataItem::-webkit-scrollbar-thumb {
+    background: #ababab; } }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
+
+body {
+  background: #fff; }
 
 body > *:not(footer) {
   padding: 0 1.5%; }

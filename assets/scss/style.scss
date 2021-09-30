@@ -14,11 +14,16 @@
 @import "./404";
 @import "./loader";
 @import "./responsive";
+@import "./scrollbar";
 // Basic styles
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: map-get($textColors, "primary");
 }
 
 body>*:not(footer) {
