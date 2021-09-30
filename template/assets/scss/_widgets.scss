@@ -1,0 +1,46 @@
+        #widgets {
+            width: 100%;
+            @include flex(row wrap, center, flex-start);
+            margin-top: 3em;
+        }
+        
+        .widget {
+            // General
+            width: 40.5%;
+            margin-right: 1em;
+            @include centerElements(column);
+            >* {
+                width: 100%;
+            }
+            // Title
+            .widgetTitle {
+                position: relative;
+                @include font('open-sans', 1.3rem, normal, bolder, map-get($generalColors, "primary"));
+                padding-bottom: 0.3em;
+                // UnderLine
+                 :before,
+                 :after {
+                    @include titleUnderLine;
+                    height: 4px;
+                }
+                 :before {
+                    width: 100px;
+                    background: map-get($generalColors, "primary");
+                    z-index: 1;
+                }
+                 :after {
+                    width: 100%;
+                    background: $lineColor;
+                    z-index: 0;
+                }
+            }
+            // Items
+            .widgetItem {
+                margin-top: 0.5em;
+                @include font('overpass-bold', 1.3rem, normal, normal, map-get($generalColors, "secondary"));
+                // Links
+                a {
+                    color: map-get($generalColors, "secondary");
+                }
+            }
+        }

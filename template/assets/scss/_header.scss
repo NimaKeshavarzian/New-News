@@ -1,0 +1,56 @@
+// Body
+#pageHeader {
+    min-height: 6%;
+    @include general(100%, auto);
+    position: relative;
+    @include flex(row wrap, flex-start, center);
+}
+
+//Title
+#pageTitle {
+    width: auto;
+    float: left;
+    margin-right: 2em;
+}
+
+#pageTitle a {
+    cursor: pointer;
+    @include font('open-sans', 30px, normal, bolder, map-get($generalColors, "primary"));
+}
+
+// Menu
+#pageMenu {
+    display: inline;
+    float: left;
+    margin-top: 0.8em;
+    ul {
+        @include flex(row wrap, flex-start, center);
+        list-style: none;
+    }
+}
+
+.menuItem {
+    margin: 0 0.75em;
+    // Links
+    a {
+        @include font('overpass-regular', 20px, normal, normal, map-get($generalColors, "secondary"))
+    }
+}
+
+.selectedItem {
+    color: map-get($generalColors, "primary") !important;
+}
+
+//  Page tools
+#pageTools {
+    // General
+    min-width: 10%;
+    // Position
+    @include position(absolute, .4em, null, null, 1em);
+    @include flex(row, center, center);
+    // Child
+    >* {
+        margin-right: 0.3em;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,50 @@
+#pageFooter {
+    // General
+    @include general(100%, auto, map-get($generalColors, "secondary"));
+    @include flex(column, flex-start, center);
+    margin-top: 4em;
+    // Styles
+    border-radius: 20px 20px 0 0;
+    // Links
+    a:hover {
+        color: $detailsColor !important;
+    }
+    // Page title
+    #title {
+        @include font('open-sans', 1.8em, italic, bolder);
+    }
+    // Page description
+    #desc {
+        @include font('open-sans', 1rem, italic, bolder);
+        text-align: center
+    }
+    // Email
+    #adminMail {
+        // General
+        @include centerElements(row);
+        margin-top: 1em;
+        // Styles
+        @include font('open-sans', 1rem, normal, bold);
+        img {
+            margin-right: 0.4em;
+        }
+    }
+    // Social Media Icons
+    #socialMediaIcons {
+        width: 100%;
+        @include centerElements(row);
+        margin-top: 1em;
+        >* {
+            margin: 0 1em;
+        }
+    }
+    // Copyright
+    #copyright {
+        @include centerElements(row);
+        margin: 1.5em 0 0.4em;
+        @include font('open-sans', 1rem, normal, bolder);
+        img {
+            margin-right: 0.3em;
+        }
+    }
+}

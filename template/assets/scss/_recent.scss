@@ -1,0 +1,94 @@
+// Body
+#articles {
+    @include general(60%, auto);
+    @include centerElements(column);
+    padding: 1em 0;
+}
+
+// Title
+#articlesTitle {
+    width: 100%;
+    position: relative;
+    @include font('open-sans', 1.9rem, normal, bolder, map-get($generalColors, "primary"));
+    text-align: left;
+    padding-bottom: .3em;
+}
+
+#articlesTitle:before,
+#articlesTitle:after {
+    @include titleUnderLine;
+}
+
+#articlesTitle:before {
+    @include general(115px, 5px, map-get($generalColors, "primary"));
+    z-index: 1;
+}
+
+#articlesTitle:after {
+    @include general(100%, 4px, $lineColor);
+    z-index: 0;
+}
+
+// Items
+.post {
+    // General
+    @include general(80%, 21em);
+    position: relative;
+    margin-top: 1.5em;
+    // Border
+    border-radius: map-get($borderRadiusSize, "level1");
+    // Thumbnail
+    .postThumbnail {
+        @include general(100%, 100%);
+        border-radius: inherit;
+    }
+    // Data
+    .postData {
+        @include postDataContainer;
+        @include flex(column, space-between, space-between); // Border
+        border-radius: inherit;
+        // Title
+        .postTitle {
+            // Font
+            @include font('open-sans', 1.2rem, normal, bolder);
+            padding: 0 0.5em;
+            // Links
+            @include changeDetailsLinkColor;
+        }
+        // Details
+        .postMoreData {
+            @include postMoreData;
+        }
+    }
+}
+
+// Page counter
+#pageCounter {
+    @include general(100%, auto);
+    @include centerElements(row);
+    margin-top: 2em;
+    list-style: none;
+    // Items
+    li {
+        margin: 0 0.3em;
+        border-radius: map-get($borderRadiusSize, "level1");
+        box-shadow: 0px -3px 4px map-get($shadowColor, "shadow"), 0px 3px 4px map-get($shadowColor, "light");
+        @include font('overpass-bold', 1.5rem, normal, bold, map-get($textColors, "secondary"));
+        padding: 0.3em 0.4em 0.1em;
+        cursor: pointer;
+        // Links
+        a {
+            color: map-get($textColors, "secondary");
+        }
+        @include changeDetailsLinkColor;
+    }
+    li.selectedPage {
+        background: map-get($generalColors, "primary");
+        box-shadow: none;
+        color: map-get($textColors, "primary");
+        // Links
+        a {
+            color: map-get($textColors, "primary");
+        }
+    }
+}

@@ -1,0 +1,55 @@
+// Files
+@import "./variables";
+@import "./fonts";
+@import "./mixins";
+@import "./header";
+@import "./slider";
+@import "./recent";
+@import "./more_data";
+@import "./widgets";
+@import "./footer";
+@import "./single";
+@import "./archives";
+@import "./search";
+@import "./404";
+@import "./loader";
+@import "./responsive";
+@import "./scrollbar";
+// Basic styles
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: map-get($textColors, "primary");
+}
+
+body>*:not(footer) {
+    padding: 0 1.5%;
+}
+
+// Hide elements
+.hidden {
+    display: none !important;
+}
+
+// Links
+a {
+    text-decoration: none;
+    color: map-get($textColors, "primary");
+    transition-duration: 0.3s;
+}
+
+a:hover {
+    color: map-get($generalColors, "primary");
+}
+
+// Articles
+#articlesContainer {
+    width: 95%;
+    @include flex(row, flex-start, flex-start);
+    position: relative;
+    margin: auto;
+}
