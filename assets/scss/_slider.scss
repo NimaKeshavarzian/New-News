@@ -14,7 +14,7 @@
         grid-row: 1/2;
         // Img
         .sliderItemImg {
-            height: 432px;
+            height: 480px;
         }
         // Title
         .sliderItemTitle {
@@ -35,7 +35,7 @@
     }
     // Images
     .sliderItemImg {
-        @include general(100%, 141px);
+        @include general(100%, 157px);
     }
     // Title
     .sliderItemTitle {
@@ -53,7 +53,7 @@
     }
     // Images
     .sliderItemImg {
-        @include general(100%, 286px);
+        @include general(100%, 100%);
     }
 }
 

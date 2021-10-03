@@ -17,7 +17,7 @@ Version: 1.0.0
 @import "./assets/scss/mixins";
 @import "./assets/scss/header";
 @import "./assets/scss/slider";
-@import "./assets/scss/recent";
+@import "./assets/scss/articles";
 @import "./assets/scss/more_data";
 @import "./assets/scss/widgets";
 @import "./assets/scss/footer";
@@ -65,4 +65,9 @@ a:hover {
     @include flex(row, flex-start, flex-start);
     position: relative;
     margin: auto;
+}
+
+// SVGs
+svg {
+    fill: map-get($textColors, "primary");
 }

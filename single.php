@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#174E81">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <title>New News</title>
 </head>
 
@@ -21,7 +21,7 @@
         <div id="searchBox" class="hidden">
             <input type="text" name="s" id="searchValue" placeholder="Search...">
             <button type="submit" id="submitSearch" name="submit">
-                <img src="./assets/icons/search-solid.svg" alt="Search" width="30" height="35">
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/search-solid.svg" alt="Search" width="30" height="35">
             </button>
             <button type="button" id="closeSearchBox">&#10005;</button>
         </div>
@@ -42,10 +42,10 @@
             </nav>
             <div id="pageTools">
                 <h1 id="searchBoxTransmitter">
-                    <img src="./assets/icons/search-solid.svg" alt="Search" width="30" height="30">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/search-solid.svg" alt="Search" width="30" height="30">
                 </h1>
                 <h1 id="menuTransmitter" class="hidden">
-                    <img src="./assets/icons/bars-solid.svg" alt="Menu" width="30" height="30">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/bars-solid.svg" alt="Menu" width="30" height="30">
                 </h1>
             </div>
         </div>
@@ -54,13 +54,13 @@
     <!-- Article -->
     <article id="article">
         <div id="postData">
-            <img src="./assets/icons/Windows 11 Wallpaper 1.jpg" alt="Title" id="thumbnail">
+            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/Windows 11 Wallpaper 1.jpg" alt="Title" id="thumbnail">
             <div id="data">
                 <h1 id="postTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                 <h2 id="postMoreData">
                     <span class="postMoreDataItem">by<span> Nima Keshavarzian</span></span>
-                    <span class="postMoreDataItem"><img src="./assets/icons/calendar-solid.svg" alt="Date" width="20" height="20"><span>2021-09-22</span></span>
-                    <span class="postMoreDataItem"><img src="./assets/icons/clock-solid.svg" alt="Time" width="20" height="20"><span> 22:55:33 pm</span></span>
+                    <span class="postMoreDataItem"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/calendar-solid.svg" alt="Date" width="20" height="20"><span>2021-09-22</span></span>
+                    <span class="postMoreDataItem"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/clock-solid.svg" alt="Time" width="20" height="20"><span> 22:55:33 pm</span></span>
                 </h2>
                 <div id="postCategories">
                     <span class="postCategory">Category 1</span>
@@ -125,24 +125,24 @@
             <h2 id="desc">A news template for wordpress with beautiful parts</h2>
 
             <a href="mailto:nimakeshavarzian@gmail.com" id="adminMail">
-                <img src="./assets/icons/envelope-solid.svg" alt="Email" width="20" height="20">nimakeshavarzian@gmail.com
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/envelope-solid.svg" alt="Email" width="20" height="20">nimakeshavarzian@gmail.com
             </a>
 
-            <div id="socialMediaIcons">
-                <img src="./assets/icons/rss-solid.svg" alt="" width="30" height="30">
-                <img src="./assets/icons/telegram-brands.svg" alt="" width="30" height="30">
-                <img src="./assets/icons/twitter-brands.svg" alt="" width="30" height="30">
-                <img src="./assets/icons/instagram-brands.svg" alt="" width="30" height="30">
-                <img src="./assets/icons/facebook-f-brands.svg" alt="" width="30" height="30">
+            <div id="footerWidget">
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/rss-solid.svg" alt="" width="30" height="30">
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/telegram-brands.svg" alt="" width="30" height="30">
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/twitter-brands.svg" alt="" width="30" height="30">
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram-brands.svg" alt="" width="30" height="30">
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/facebook-f-brands.svg" alt="" width="30" height="30">
             </div>
 
-            <h3 id="copyright"><img src="./assets/icons/copyright-solid.svg" alt="" width="20" height="20">Copyright 2021</h3>
+            <h3 id="copyright"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/copyright-solid.svg" alt="" width="20" height="20">Copyright 2021</h3>
 
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="./assets/js/main.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 
 </body>
 

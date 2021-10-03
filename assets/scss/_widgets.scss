@@ -24,7 +24,7 @@
                     height: 4px;
                 }
                  :before {
-                    width: 100px;
+                    width: 70px;
                     background: map-get($generalColors, "primary");
                     z-index: 1;
                 }
@@ -32,6 +32,19 @@
                     width: 100%;
                     background: $lineColor;
                     z-index: 0;
+                }
+            }
+            // Wp widget
+            ul {
+                // Items
+                li {
+                    width: 85%;
+                    margin: 0.5em auto 0;
+                    @include font('overpass-bold', 1.3rem, normal, normal, map-get($generalColors, "secondary"));
+                    // Links
+                    a {
+                        color: map-get($generalColors, "secondary");
+                    }
                 }
             }
             // Items

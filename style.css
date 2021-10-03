@@ -10,15 +10,15 @@ Version: 1.0.0
 */
 @font-face {
   font-family: 'open-sans';
-  src: url("../fonts/OpenSans-Bold.ttf"); }
+  src: url("./assets/fonts/OpenSans-Bold.ttf"); }
 
 @font-face {
   font-family: 'overpass-regular';
-  src: url("../fonts/Overpass-Regular.ttf"); }
+  src: url("./assets/fonts/Overpass-Regular.ttf"); }
 
 @font-face {
   font-family: 'overpass-bold';
-  src: url("../fonts/Overpass-Bold.ttf"); }
+  src: url("./assets/fonts/Overpass-Bold.ttf"); }
 
 #pageHeader {
   min-height: 6%;
@@ -56,13 +56,13 @@ Version: 1.0.0
     align-items: center;
     list-style: none; }
 
-.menuItem {
+.menu-item {
   margin: 0 0.75em; }
-  .menuItem a {
+  .menu-item a {
     font: normal normal 20px "overpass-regular";
     color: #3A3A3A; }
 
-.selectedItem {
+.selectedItem * {
   color: #174E81 !important; }
 
 #pageTools {
@@ -103,7 +103,7 @@ Version: 1.0.0
     grid-column: 1/3;
     grid-row: 1/2; }
     #leftSlider .sliderItem:nth-child(1) .sliderItemImg {
-      height: 432px; }
+      height: 480px; }
     #leftSlider .sliderItem:nth-child(1) .sliderItemTitle {
       min-height: 10%;
       font-size: 1.3rem; }
@@ -116,7 +116,7 @@ Version: 1.0.0
     grid-row: 2/3; }
   #leftSlider .sliderItemImg {
     width: 100%;
-    height: 141px;
+    height: 157px;
     background: none; }
   #leftSlider .sliderItemTitle {
     font-size: 1rem; }
@@ -137,7 +137,7 @@ Version: 1.0.0
     background: none; }
   #rightSlider .sliderItemImg {
     width: 100%;
-    height: 286px;
+    height: 100%;
     background: none; }
 
 .sliderItem {
@@ -148,8 +148,8 @@ Version: 1.0.0
     min-height: 20%;
     max-height: 100%;
     background: #00000080;
-    backdrop-filter: blur(10px);
-    webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
+    webkit-backdrop-filter: blur(2px);
     position: absolute;
     top: unset;
     left: 0;
@@ -187,6 +187,8 @@ Version: 1.0.0
   color: #174E81;
   text-align: left;
   padding-bottom: .3em; }
+  #articlesTitle .articlesTitleDesc {
+    color: #3A3A3A; }
 
 #articlesTitle:before,
 #articlesTitle:after {
@@ -212,7 +214,7 @@ Version: 1.0.0
 
 .post {
   width: 80%;
-  height: 21em;
+  height: 24em;
   background: none;
   position: relative;
   margin-top: 1.5em;
@@ -227,8 +229,8 @@ Version: 1.0.0
     min-height: 20%;
     max-height: 100%;
     background: #00000080;
-    backdrop-filter: blur(10px);
-    webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
+    webkit-backdrop-filter: blur(2px);
     position: absolute;
     top: unset;
     left: 0;
@@ -270,7 +272,7 @@ Version: 1.0.0
           margin-left: 0.3em;
           color: #1D92FF; }
 
-#pageCounter {
+#pageNumber {
   width: 100%;
   height: auto;
   background: none;
@@ -282,7 +284,7 @@ Version: 1.0.0
   align-items: center;
   margin-top: 2em;
   list-style: none; }
-  #pageCounter li {
+  #pageNumber .pageNumberItem {
     margin: 0 0.3em;
     border-radius: 10px;
     box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.3), 0px 3px 4px rgba(0, 0, 0, 0.25);
@@ -290,30 +292,33 @@ Version: 1.0.0
     color: #000;
     padding: 0.3em 0.4em 0.1em;
     cursor: pointer; }
-    #pageCounter li a {
+    #pageNumber .pageNumberItem a {
       color: #000; }
-    #pageCounter li a:hover {
+    #pageNumber .pageNumberItem a:hover {
       color: #1D92FF; }
-  #pageCounter li.selectedPage {
+  #pageNumber .pageNumberItem.selectedPage {
     background: #174E81;
     box-shadow: none;
     color: #fff; }
-    #pageCounter li.selectedPage a {
+    #pageNumber .pageNumberItem.selectedPage a {
       color: #fff; }
 
 #moreData {
   width: 40%;
   height: auto;
   background: none;
-  position: absolute;
+  position: relative;
   top: 5em;
+  left: 0;
+  bottom: 0;
   right: 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column;
   flex-flow: column;
-  justify-content: flex-end;
-  align-items: flex-end; }
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1em; }
 
 .moreDataItem {
   width: 95%;
@@ -371,8 +376,8 @@ Version: 1.0.0
       min-height: 20%;
       max-height: 100%;
       background: #00000080;
-      backdrop-filter: blur(10px);
-      webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(2px);
+      webkit-backdrop-filter: blur(2px);
       position: absolute;
       top: unset;
       left: 0;
@@ -422,13 +427,20 @@ Version: 1.0.0
       border-radius: 30px;
       height: 4px; }
     .widget .widgetTitle :before {
-      width: 100px;
+      width: 70px;
       background: #174E81;
       z-index: 1; }
     .widget .widgetTitle :after {
       width: 100%;
       background: #ababab;
       z-index: 0; }
+  .widget ul li {
+    width: 85%;
+    margin: 0.5em auto 0;
+    font: normal normal 1.3rem "overpass-bold";
+    color: #3A3A3A; }
+    .widget ul li a {
+      color: #3A3A3A; }
   .widget .widgetItem {
     margin-top: 0.5em;
     font: normal normal 1.3rem "overpass-bold";
@@ -451,10 +463,10 @@ Version: 1.0.0
   #pageFooter a:hover {
     color: #1D92FF !important; }
   #pageFooter #title {
-    font: italic bolder 1.8em "open-sans";
+    font: italic bolder 2.1em "open-sans";
     color: #fff; }
   #pageFooter #desc {
-    font: italic bolder 1rem "open-sans";
+    font: italic bolder 1.3rem "open-sans";
     color: #fff;
     text-align: center; }
   #pageFooter #adminMail {
@@ -465,11 +477,11 @@ Version: 1.0.0
     justify-content: center;
     align-items: center;
     margin-top: 1em;
-    font: normal bold 1rem "open-sans";
+    font: normal bold 1.1rem "open-sans";
     color: #fff; }
     #pageFooter #adminMail img {
       margin-right: 0.4em; }
-  #pageFooter #socialMediaIcons {
+  #pageFooter #footerWidget ul {
     width: 100%;
     display: -ms-flexbox;
     display: flex;
@@ -477,8 +489,9 @@ Version: 1.0.0
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    margin-top: 1em; }
-    #pageFooter #socialMediaIcons > * {
+    margin-top: 1em;
+    list-style: none; }
+    #pageFooter #footerWidget ul > * {
       margin: 0 1em; }
   #pageFooter #copyright {
     display: -ms-flexbox;
@@ -519,8 +532,8 @@ Version: 1.0.0
     min-height: 10%;
     max-height: 100%;
     background: #00000080;
-    backdrop-filter: blur(10px);
-    webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
+    webkit-backdrop-filter: blur(2px);
     position: absolute;
     top: unset;
     left: 0;
@@ -708,6 +721,8 @@ Version: 1.0.0
     height: 32px; } }
 
 @media screen and (max-width: 1050px) {
+  #slider img {
+    height: 100% !important; }
   .post .postData .postTitle {
     font-size: 1.1rem; }
   .post .postData .postMoreData {
@@ -741,8 +756,6 @@ Version: 1.0.0
 @media screen and (max-width: 750px) {
   #slider {
     height: 85%; }
-    #slider img {
-      height: 100% !important; }
   #articlesContainer #moreData {
     width: 100%; }
   #article {
@@ -751,7 +764,7 @@ Version: 1.0.0
 @media screen and (max-width: 650px) {
   #pageMenu ul {
     justify-content: space-around; }
-    #pageMenu ul .menuItem {
+    #pageMenu ul .menu-item {
       margin: 0.5em; }
   #slider {
     height: 75%; }
@@ -879,3 +892,6 @@ a:hover {
   align-items: flex-start;
   position: relative;
   margin: auto; }
+
+svg {
+  fill: #fff; }

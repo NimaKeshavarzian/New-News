@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#174E81">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <title>New News</title>
 </head>
 
@@ -21,7 +21,7 @@
         <div id="searchBox" class="hidden">
             <input type="text" name="s" id="searchValue" placeholder="Search...">
             <button type="submit" id="submitSearch" name="submit">
-                <img src="./assets/icons/search-solid.svg" alt="Search" width="30" height="35">
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/search-solid.svg" alt="Search" width="30" height="35">
             </button>
             <button type="button" id="closeSearchBox">&#10005;</button>
         </div>
@@ -42,10 +42,10 @@
             </nav>
             <div id="pageTools">
                 <h1 id="searchBoxTransmitter">
-                    <img src="./assets/icons/search-solid.svg" alt="Search" width="30" height="30">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/search-solid.svg" alt="Search" width="30" height="30">
                 </h1>
                 <h1 id="menuTransmitter" class="hidden">
-                    <img src="./assets/icons/bars-solid.svg" alt="Menu" width="30" height="30">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/bars-solid.svg" alt="Menu" width="30" height="30">
                 </h1>
             </div>
         </div>
@@ -58,7 +58,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="./assets/js/main.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 </body>
 
 </html>

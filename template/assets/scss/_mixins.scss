@@ -38,8 +38,8 @@
     min-height: $min-height;
     max-height: 100%;
     background: $articleTitleBg;
-    backdrop-filter: blur(10px);
-    webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
+    webkit-backdrop-filter: blur(2px);
     @include position(absolute, unset);
 }
 

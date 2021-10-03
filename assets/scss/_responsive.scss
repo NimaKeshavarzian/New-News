@@ -1,4 +1,10 @@
 @media screen and (max-width: 1050px) {
+    // Slider
+    #slider {
+        img {
+            height: 100% !important;
+        }
+    }
     // Posts
     .post .postData {
         // Title
@@ -63,9 +69,6 @@
     // slider 
     #slider {
         height: 85%;
-        img {
-            height: 100% !important;
-        }
     }
     // More data
     #articlesContainer #moreData {
@@ -82,7 +85,7 @@
     #pageMenu {
         ul {
             justify-content: space-around;
-            .menuItem {
+            .menu-item {
                 margin: 0.5em;
             }
         }

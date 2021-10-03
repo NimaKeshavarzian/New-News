@@ -1,8 +1,9 @@
 // Body
 #moreData {
     @include general(40%, auto);
-    @include position(absolute, 5em, null, null, 0);
-    @include flex(column, flex-end, flex-end);
+    @include position(relative, 5em);
+    @include flex(column, flex-start, flex-start);
+    margin-bottom: 1em;
 }
 
 // Items

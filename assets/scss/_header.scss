@@ -29,7 +29,7 @@
     }
 }
 
-.menuItem {
+.menu-item {
     margin: 0 0.75em;
     // Links
     a {
@@ -37,7 +37,7 @@
     }
 }
 
-.selectedItem {
+.selectedItem * {
     color: map-get($generalColors, "primary") !important;
 }
 

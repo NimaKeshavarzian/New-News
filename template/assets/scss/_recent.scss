@@ -62,8 +62,8 @@
     }
 }
 
-// Page counter
-#pageCounter {
+// Page number
+#pageNumber {
     @include general(100%, auto);
     @include centerElements(row);
     margin-top: 2em;

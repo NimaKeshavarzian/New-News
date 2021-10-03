@@ -12,6 +12,9 @@
     @include font('open-sans', 1.9rem, normal, bolder, map-get($generalColors, "primary"));
     text-align: left;
     padding-bottom: .3em;
+    .articlesTitleDesc {
+        color: map-get($generalColors, "secondary");
+    }
 }
 
 #articlesTitle:before,
@@ -32,7 +35,7 @@
 // Items
 .post {
     // General
-    @include general(80%, 21em);
+    @include general(80%, 24em);
     position: relative;
     margin-top: 1.5em;
     // Border
@@ -62,14 +65,14 @@
     }
 }
 
-// Page counter
-#pageCounter {
+// Page number
+#pageNumber {
     @include general(100%, auto);
     @include centerElements(row);
     margin-top: 2em;
     list-style: none;
     // Items
-    li {
+    .pageNumberItem {
         margin: 0 0.3em;
         border-radius: map-get($borderRadiusSize, "level1");
         box-shadow: 0px -3px 4px map-get($shadowColor, "shadow"), 0px 3px 4px map-get($shadowColor, "light");
@@ -82,7 +85,7 @@
         }
         @include changeDetailsLinkColor;
     }
-    li.selectedPage {
+    .pageNumberItem.selectedPage {
         background: map-get($generalColors, "primary");
         box-shadow: none;
         color: map-get($textColors, "primary");
