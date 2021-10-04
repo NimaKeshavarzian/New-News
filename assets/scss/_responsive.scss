@@ -1,8 +1,12 @@
 @media screen and (max-width: 1050px) {
     // Slider
     #slider {
-        img {
-            height: 100% !important;
+        height: 93%;
+        #leftSlider {
+            width: 60%;
+        }
+        #rightSlider {
+            width: 40%;
         }
     }
     // Posts
@@ -121,6 +125,10 @@
             // Title
             .sliderItemTitle {
                 font-size: 1.1rem !important;
+            }
+            // img
+            .sliderItemImg {
+                height: 260px;
             }
         }
         #rightSlider {

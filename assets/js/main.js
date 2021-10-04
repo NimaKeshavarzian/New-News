@@ -3,6 +3,8 @@ window.onload = function() {
     toggleShowMode(document.getElementById('loader'));
     // Menu
     showMenu();
+    // Remove system categories
+    removeSystemCategories(document.querySelectorAll('.widget *'), "slider post");
 }
 
 // Search box
@@ -26,6 +28,12 @@ function showMenu() {
     } else {
         menuTransmitter.classList.add("hidden");
     }
+}
+
+function removeSystemCategories(elements, category) {
+    elements.forEach(function(elem) {
+        if (elem.textContent == category) toggleShowMode(elem.parentNode);
+    });
 }
 
 // Toggle elements show mode
