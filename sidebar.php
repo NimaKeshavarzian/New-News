@@ -24,7 +24,7 @@
         <h1 class="moreDataTitle" id="popularTitle">Popular</h1>
         <?php
         // Most visited posts
-        query_posts('meta_key=post_views_count&showposts=4&orderby=meta_value_num&order=DESC');
+        query_posts('meta_key=post_views_count&showposts=4&orderby=meta_value_num&order=DESC&posts_per_page=5');
         if (have_posts()) : while (have_posts()) : the_post();
         ?>
                 <article class="moreDataPost">

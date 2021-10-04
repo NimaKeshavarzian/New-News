@@ -47,7 +47,7 @@
             flex-flow: row;
             // Items
             .moreDataItem {
-                height: 51em;
+                max-height: 51em;
             }
         }
     }
@@ -184,7 +184,7 @@
     }
     // Single
     #postData {
-        height: 65%;
+        height: 50%;
     }
     #postData #data {
         // Title
@@ -207,5 +207,9 @@
     // Tags
     .tag {
         font-size: 1.1rem !important;
+    }
+    // Comments
+    #commentsContainer #respond {
+        width: 95%;
     }
 }

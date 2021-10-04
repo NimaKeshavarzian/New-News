@@ -2,6 +2,13 @@
 #article {
     width: 60%;
     margin: 1em auto;
+    * {
+        font-family: 'overpass-regular';
+    }
+    p {
+        @include font('overpass-regular', 1.1rem, normal, normal, map-get($generalColors, "secondary"));
+        line-height: 35px;
+    }
 }
 
 // Data
@@ -41,7 +48,7 @@
             margin: 0.3em 0.5em;
             background: map-get($generalColors, "primary");
             @include font('overpass-bold', 1.2em, normal, 800);
-            padding: 0.3em 0.5em;
+            padding: 0.4em 0.5em 0.3em;
             border-radius: map-get($borderRadiusSize, "level4");
         }
     }
@@ -50,9 +57,6 @@
 // Content
 #postContent {
     margin-top: 2em;
-    @include font('overpass-regular', 1.1rem, normal, normal, map-get($generalColors, "secondary"));
-    text-align: left;
-    line-height: 35px;
 }
 
 #postContent::selection {

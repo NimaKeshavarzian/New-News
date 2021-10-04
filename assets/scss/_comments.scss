@@ -1,0 +1,122 @@
+#commentsContainer {
+    @include general(100%, auto);
+    margin-top: 2em;
+    margin-bottom: 7em;
+    overflow: hidden scroll;
+    // Part title
+    #commentsPartTitle {
+        position: relative;
+        @include font('open-sans', 1.4rem, normal, bold, map-get($generalColors, "primary"));
+        padding-bottom: 0.1em;
+    }
+    // Underline
+    #commentsPartTitle:before,
+    #commentsPartTitle:after {
+        height: 4px;
+        @include titleUnderLine;
+    }
+    #commentsPartTitle:before {
+        width: 120px;
+        background: map-get($generalColors, "primary");
+        z-index: 5;
+    }
+    #commentsPartTitle:after {
+        width: 100%;
+        background: $lineColor;
+        z-index: 0;
+    }
+    // Comments
+    #comments {
+        @include flex(column, flex-start, center);
+        margin-bottom: 3em;
+        // Links
+        a {
+            color: map-get($generalColors, "primary");
+        }
+        .comment {
+            width: 85%;
+            margin-top: 1em;
+            padding: 0.3em;
+            // Border
+            border: 2px solid $borderColor;
+            border-radius: map-get($borderRadiusSize, "level2");
+            // User data
+            .comment-author {
+                width: 100%;
+                @include flex(row, flex-start, flex-start);
+                padding: 0.3em 0.5em;
+                // Username
+                .fn {
+                    @include font('overpass-bold', 1.3rem, normal, bold, map-get($generalColors, "primary"));
+                    transform: translateX(0.4em);
+                }
+                .says {
+                    display: none;
+                }
+            }
+            // Comment meta
+            .comment-meta {
+                @include position(relative, -1.4em, 4.3em);
+                a {
+                    @include font('overpass-bold', 1rem, normal, bold, map-get($generalColors, "secondary"));
+                }
+            }
+            // Content
+            p {
+                @include font('overpass-regular', 1.2rem, normal, normal, map-get($generalColors, "secondary"));
+                padding: 0.5em 0.3em;
+            }
+            // Reply Button
+            .reply {
+                display: inline;
+                float: right;
+                @include position(relative, -0.25em, -0.5em);
+                a {
+                    color: map-get($generalColors, "primary");
+                }
+                a:hover {
+                    color: $detailsColor;
+                }
+            }
+            // Reply comment
+            .comment {
+                margin: 1em auto;
+            }
+            // Awaiting
+            .comment-awaiting-moderation {
+                display: none;
+            }
+        }
+    }
+    // Comments form
+    #respond {
+        width: 80%;
+        margin: auto;
+        border: 2px solid $borderColor;
+        border-radius: map-get($borderRadiusSize, "level2");
+        padding: 1em;
+        // Inputs
+        textarea,
+        input[type="text"] {
+            width: 75%;
+            @include font('overpass-regular', 1.3rem, normal, normal, map-get($generalColors, "primary"));
+            padding-left: 0.5em;
+        }
+        textarea {
+            @include general(90%, 6em);
+            margin: auto;
+            resize: none;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        // Submit btn
+        #submit {
+            background: map-get($generalColors, "primary");
+            border: none;
+            border-radius: 5px;
+            @include font('overpass-regular', 1.1rem, normal, normal);
+            padding: 0.3em 0.3em 0.2em;
+        }
+    }
+}

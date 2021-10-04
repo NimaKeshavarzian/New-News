@@ -22,6 +22,7 @@ Version: 1.0.0
 @import "./assets/scss/widgets";
 @import "./assets/scss/footer";
 @import "./assets/scss/single";
+@import "./assets/scss/comments";
 @import "./assets/scss/archives";
 @import "./assets/scss/search";
 @import "./assets/scss/404";
@@ -70,4 +71,10 @@ a:hover {
 // SVGs
 svg {
     fill: map-get($textColors, "primary");
+}
+
+// Wordpress admin panel
+#wpadminbar {
+    top: unset !important;
+    bottom: 0;
 }
