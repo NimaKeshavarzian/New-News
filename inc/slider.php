@@ -1,12 +1,12 @@
+<?php
+$sliderQuery = new WP_Query(array(
+    "category_name" => "slider",
+    "posts_per_page" => "5"
+));
+$sliderPostsNumber = 0;
+if($sliderQuery->post_count >= 3) :
+?>
 <div id="slider">
-    <?php
-    $sliderQuery = new WP_Query(array(
-        "category_name" => "slider",
-        "posts_per_page" => "5"
-    ));
-    $sliderPostsNumber = 0;
-    ?>
-
     <div id="leftSlider">
         <?php
         if ($sliderQuery->have_posts()) :
@@ -40,3 +40,4 @@
 
 <?php endif; ?>
 </div>
+<?php endif; ?>

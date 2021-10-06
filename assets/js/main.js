@@ -30,6 +30,7 @@ function showMenu() {
     }
 }
 
+// System category
 function removeSystemCategories(elements, category) {
     elements.forEach(function(elem) {
         if (elem.textContent == category) toggleShowMode(elem.parentNode);
