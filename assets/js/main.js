@@ -15,13 +15,13 @@ searchBoxTransmitter.onclick = function() { toggleShowMode(searchBox) };
 closeSearchBoxBtn.onclick = function() { toggleShowMode(searchBox) };
 
 // Menu
-window.addEventListener("resize", function() { showMenu() });
+window.onresize = function() { showMenu(); }
 
 function showMenu() {
     var menuTransmitter = document.getElementById("menuTransmitter");
     var menu = document.getElementById("pageMenu");
     var deviceWidth = window.innerWidth;
-    if (deviceWidth <= 420) {
+    if (deviceWidth <= 600) {
         toggleShowMode(menuTransmitter);
         toggleShowMode(menu);
         menuTransmitter.addEventListener("click", function() { toggleShowMode(menu) });
