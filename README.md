@@ -4,7 +4,7 @@
 
 ### Slider
 #### Slider is for your important posts with a big & minimal style.
-> To use slider you should use "slider post" category for your posts.
+> To use slider you should use "slider post" category for your posts.\
 :warning: This category isn't show to your users
 
 
