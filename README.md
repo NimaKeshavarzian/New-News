@@ -12,3 +12,9 @@
 #### Suggestions
 ##### Suggestions is a category with a part in sidebar
 > To use suggestions you should use "suggestions" category for your posts.
+
+### How to develop
+#### for change style run this commands
+> npm install
+> npm run build-sass
+> Edit scss files
