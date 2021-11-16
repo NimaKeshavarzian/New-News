@@ -43,11 +43,11 @@ Version: 1.0.0
   font: normal bolder 30px "open-sans";
   color: #174E81; }
 
-#pageMenu {
+nav {
   display: inline;
   float: left;
   margin-top: 0.8em; }
-  #pageMenu ul {
+  nav ul {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -56,9 +56,9 @@ Version: 1.0.0
     align-items: center;
     list-style: none; }
 
-.menu-item {
+.li {
   margin: 0 0.75em; }
-  .menu-item a {
+  .li a {
     font: normal normal 20px "overpass-regular";
     color: #3A3A3A; }
 
@@ -306,8 +306,8 @@ Version: 1.0.0
   width: 40%;
   height: auto;
   background: none;
-  position: relative;
-  top: 5em;
+  position: sticky;
+  top: 2em;
   left: 0;
   bottom: 0;
   right: 0;
@@ -317,6 +317,7 @@ Version: 1.0.0
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 5em;
   margin-bottom: 1em; }
 
 .moreDataItem {
@@ -459,6 +460,9 @@ Version: 1.0.0
   align-items: center;
   margin-top: 4em;
   border-radius: 20px 20px 0 0; }
+  #pageFooter * {
+    text-align: center;
+    color: #fff !important; }
   #pageFooter a:hover {
     color: #1D92FF !important; }
   #pageFooter #title {
@@ -738,6 +742,10 @@ Version: 1.0.0
       resize: none; }
     #commentsContainer #respond p {
       margin-bottom: 1em; }
+    #commentsContainer #respond .logged-in-as a {
+      color: #174E81; }
+    #commentsContainer #respond .logged-in-as a:hover {
+      color: #1D92FF; }
     #commentsContainer #respond #submit {
       background: #174E81;
       border: none;

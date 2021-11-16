@@ -5,6 +5,12 @@
     margin-top: 4em;
     // Styles
     border-radius: 20px 20px 0 0;
+
+    * {
+        text-align: center;
+        color: map-get($textColors, "primary") !important;
+    }
+
     // Links
     a:hover {
         color: $detailsColor !important;

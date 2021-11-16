@@ -4,7 +4,7 @@ if (is_singular()) return;
 global $wp_query;
 /** Stop execution if there's only 1 page */
 if ($wp_query->max_num_pages <= 1) {
-    echo '<div><ul>' . "\n".'<li class="pageNumberItem" class="pageNumberItem selectedPage">1</li>';
+    echo '<div><ul id="pageNumber">' . "\n".'<li class="pageNumberItem" class="pageNumberItem selectedPage">1</li>';
     return;
 }
 $paged = get_query_var('paged') ? absint(get_query_var('paged')) : 1;

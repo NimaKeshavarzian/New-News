@@ -32,7 +32,7 @@
         // More data
         get_sidebar();
         ?>
-    </div>
+</div>
     <?php
     // Widgets Template
     require('inc/widgets.php');

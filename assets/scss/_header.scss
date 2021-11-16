@@ -19,7 +19,7 @@
 }
 
 // Menu
-#pageMenu {
+nav {
     display: inline;
     float: left;
     margin-top: 0.8em;
@@ -29,7 +29,7 @@
     }
 }
 
-.menu-item {
+.li {
     margin: 0 0.75em;
     // Links
     a {

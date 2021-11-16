@@ -20,3 +20,4 @@
     numeric_posts_nav();
     ?>
 </div>
+</div>

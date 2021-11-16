@@ -16,5 +16,5 @@
 ### How to develop
 #### for change style run this commands
 > npm install
-> npm run build-sass
+> npm run build-css
 > Edit scss files

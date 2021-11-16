@@ -31,7 +31,7 @@
         margin-bottom: 3em;
         // Links
         a {
-            color: map-get($generalColors, "primary");
+            color: map-get($generalColors, "primary") ;
         }
         .comment {
             width: 85%;
@@ -109,6 +109,15 @@
         }
         p {
             margin-bottom: 1em;
+        }
+        // Links
+        .logged-in-as {
+            a {
+            color: map-get($generalColors, "primary");
+            }
+            a:hover {
+                color: $detailsColor;
+            }
         }
         // Submit btn
         #submit {
